@@ -1,0 +1,14 @@
+#selective-show .selector,
+#selective-show select {
+    width: 100%;
+    height: 100%;
+}
+
+#selective-show .selector {
+    height: calc(100% - 50px);
+}
+
+
+#selective-show button {
+    margin-top: 5px;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "selectiveshow",
+  "title": "Selective Show",
+  "description": "Show Journals to a select number of players.",
+  "version": "1.0",
+  "author": "Moo Man",
+  "scripts": [
+    "./selectiveshow.js"
+  ],
+  "styles": [
+    "./styles.css"
+  ],
+  "packs": [],
+  "socket" : true, 
+  "minimumCoreVersion": "0.6.6",
+  "compatibleCoreVersion": "0.7.0",
+  "manifest": "",
+  "download": ""
+}

@@ -1,0 +1,11 @@
+<form>
+    <label>Select Users to Show</label>
+    <div class="selector">
+        <select name="users" multiple>
+            {{#each users as |user id|}}
+            <option value="{{user._id}}">{{user.name}}</option>
+            {{/each}}
+        </select>
+    </div>
+    <button type="submit">Show</button>
+</form>

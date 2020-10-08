@@ -47,16 +47,20 @@ class SelectiveShowApp extends Application {
         return data;
     }
 
-
      activateListeners(html) {
-         super.activateListeners();    
-         html.find("button").click(ev => {
+         super.activateListeners(html);    
+
+         html.find(".show").click(ev => {
              ev.preventDefault();
              let selector = $(ev.currentTarget).parents("form").find("select");
              this.selection(selector.val());
              this.close();
-
          })
+         html.find(".show-all").click(ev => {
+            ev.preventDefault();
+            this.selection(game.users.entities.filter(u => u.active && u.data._id != game.user._id).map(u => u.id));
+            this.close();
+        })
     }
 
 }

@@ -2,7 +2,7 @@
   "name": "selectiveshow",
   "title": "Selective Show",
   "description": "Show Journals to a select number of players.",
-  "version": "1.0",
+  "version": "1.1",
   "author": "Moo Man",
   "scripts": [
     "./selectiveshow.js"
@@ -13,7 +13,7 @@
   "packs": [],
   "socket" : true, 
   "minimumCoreVersion": "0.6.6",
-  "compatibleCoreVersion": "0.7.0",
-  "download": "https://github.com/moo-man/FVTT-SelectiveShow/archive/1.0.zip",
+  "compatibleCoreVersion": "0.7.3",
+  "download": "https://raw.githubusercontent.com/moo-man/FVTT-SelectiveShow/releases/download/1.1/selectiveshow.zip",
   "manifest": "https://raw.githubusercontent.com/moo-man/FVTT-SelectiveShow/master/module.json"
 }

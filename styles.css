@@ -12,3 +12,8 @@
 #selective-show button {
     margin-top: 5px;
 }
+
+
+#selective-show .buttons {
+    display: flex;
+}

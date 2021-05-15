@@ -1,7 +1,7 @@
 Hooks.on("ready", () => {
     JournalEntry.prototype.show = async function (mode = "text", force = false) 
     {
-        if (!this.owner) throw new Error("You may only request to show Journal Entries which you own.");
+        if (!this.owner) throw new Error(game.i18n.localize("selectiveshow.MustBeAnOwnerError"));
         let selection = await new Promise(resolve => {
             new SelectiveShowApp(resolve).render(true);
         })
@@ -15,9 +15,6 @@ Hooks.on("ready", () => {
     })
     
 })
-
-
-
 
 
 class SelectiveShowApp extends Application {
@@ -37,7 +34,7 @@ class SelectiveShowApp extends Application {
         options.width = 250;
         options.minimizable = true;
         options.resizable = true;
-        options.title = "Selective Show"
+        options.title = game.i18n.localize("selectiveshow.SelectiveShow")
         return options;
     }
 
@@ -62,5 +59,4 @@ class SelectiveShowApp extends Application {
             this.close();
         })
     }
-
 }

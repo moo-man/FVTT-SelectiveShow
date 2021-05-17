@@ -1,14 +1,15 @@
 <form>
-    <label>Select Users to Show</label>
-    <div class="selector">
-        <select name="users" multiple>
-            {{#each users as |user id|}}
-            <option value="{{user._id}}">{{user.name}}</option>
-            {{/each}}
-        </select>
+    <div class="form-group selector">
+        <div class="form-fields selector">
+            <select name="users" multiple>
+                {{#each users as |user id|}}
+                <option value="{{user._id}}">{{user.name}}</option>
+                {{/each}}
+            </select>
+        </div>
     </div>
     <div class="buttons">
-        <button class="show">Show</button>
-        <button class="show-all">Show All</button>
+        <button type="button" class="show">{{localize "selectiveshow.Show"}}</button>
+        <button type="button" class="show-all">{{localize "selectiveshow.ShowAll"}}</button>
     </div>
 </form>

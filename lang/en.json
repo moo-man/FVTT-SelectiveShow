@@ -1,0 +1,9 @@
+{
+    "selectiveshow": {
+        "Show" : "Show",
+        "ShowAll": "Show All",
+        "SelectiveShow": "Selective Show",
+        "MustBeAnOwnerError": "You may only request to show Journal Entries which you own."
+        
+    }
+}

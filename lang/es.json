@@ -1,0 +1,13 @@
+{
+    "selectiveshow": {
+		"I18N": {
+            "LANGUAGE": "Español",
+            "MAINTAINERS": "@Viriato139ac#0342"
+        },
+        "Show" : "Mostrar",
+        "ShowAll": "Mostrar a todos",
+        "SelectiveShow": "Mostrar a algunos",
+        "MustBeAnOwnerError": "Solo puede mostrar aquellas entradas de diario que posee"
+        
+    }
+}

@@ -15,12 +15,18 @@
 	  "lang": "en",
 	  "name": "English",
 	  "path": "./lang/en.json"
-	}
+	},
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "./lang/es.json"
+    }
   ],
   "packs": [],
   "socket" : true, 
   "minimumCoreVersion": "0.6.6",
   "compatibleCoreVersion": "0.8.3",
+  "url": "https://github.com/moo-man/FVTT-SelectiveShow",
   "download": "https://github.com/moo-man/FVTT-SelectiveShow/releases/download/1.1/selectiveshow.zip",
   "manifest": "https://raw.githubusercontent.com/moo-man/FVTT-SelectiveShow/master/module.json"
 }

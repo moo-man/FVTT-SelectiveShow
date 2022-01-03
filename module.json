@@ -24,8 +24,8 @@
   ],
   "packs": [],
   "socket" : true, 
-  "minimumCoreVersion": "0.8.4",
-  "compatibleCoreVersion": "0.8.8",
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "9",
   "url": "https://github.com/moo-man/FVTT-SelectiveShow",
   "download": "https://github.com/moo-man/FVTT-SelectiveShow/releases/download/2.0/selectiveshow.zip",
   "manifest": "https://raw.githubusercontent.com/moo-man/FVTT-SelectiveShow/master/module.json"

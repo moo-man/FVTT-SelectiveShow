@@ -1,7 +1,7 @@
 Hooks.on("ready", () => {
     JournalEntry.prototype.show = async function (mode = "text", force = false) 
     {
-        if (!this.owner) throw new Error(game.i18n.localize("selectiveshow.MustBeAnOwnerError"));
+        if (!this.isOwner) throw new Error(game.i18n.localize("selectiveshow.MustBeAnOwnerError"));
         let selection = await new Promise(resolve => {
             new SelectiveShowApp(resolve).render(true);
         })
@@ -10,7 +10,7 @@ Hooks.on("ready", () => {
     }
 
     game.socket.on("module.selectiveshow", ({id, mode, force, selection}) => {
-        if (selection.includes(game.user._id))
+        if (selection.includes(game.user.id))
             Journal._showEntry(id, mode, force)
     })
     
@@ -40,7 +40,7 @@ class SelectiveShowApp extends Application {
 
     getData() {
         let data = super.getData();
-        data.users = game.users.entities.filter(u => u.active && u.data._id != game.user._id);
+        data.users = game.users.filter(u => u.active && u.data.id != game.user.id);
         return data;
     }
 
@@ -55,7 +55,7 @@ class SelectiveShowApp extends Application {
          })
          html.find(".show-all").click(ev => {
             ev.preventDefault();
-            this.selection(game.users.entities.filter(u => u.active && u.data._id != game.user._id).map(u => u.id));
+            this.selection(game.users.filter(u => u.active && u.data.id != game.user.id).map(u => u.id));
             this.close();
         })
     }
